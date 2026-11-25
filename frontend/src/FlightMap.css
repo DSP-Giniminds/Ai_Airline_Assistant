@@ -1,0 +1,230 @@
+.flight-map-panel {
+  grid-column: 1 / -1;
+}
+
+.map-container {
+  height: 390px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9px;
+  border: 1px solid #293b55;
+}
+
+.flight-map {
+  width: 100%;
+  height: 100%;
+  background: #dce6ef;
+}
+
+.airport-marker-wrap {
+  background: transparent;
+  border: 0;
+}
+
+.airport-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  color: #15243a;
+  font: 700 11px sans-serif;
+}
+
+.airport-marker span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--marker-color);
+  border: 3px solid white;
+  box-shadow: 0 0 0 4px #ffffffaa;
+}
+
+.airport-marker b {
+  background: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+  box-shadow: 0 2px 8px #0003;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding-top: 14px;
+  color: #a0b0c8;
+  font-size: 10px;
+}
+
+.map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.legend-blue, .legend-red {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-blue { background: #2563eb; }
+.legend-red { background: #e05b58; }
+
+.map-disclaimer {
+  color: #71839d;
+  font-size: 10px;
+  margin: 12px 0 0;
+}
+
+@media(max-width:700px) {
+  .map-container { height: 300px; }
+}
+
+.map-heading {
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.map-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #72aaff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.map-controls {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.map-controls select,
+.map-controls button {
+  background: #1a2b43;
+  border: 1px solid #354b69;
+  border-radius: 7px;
+  color: #dce9fb;
+  padding: 9px 11px;
+  font-size: 11px;
+}
+
+.map-controls button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.map-flight-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: #15243a;
+  border: 1px solid #293d59;
+  padding: 15px;
+  border-radius: 9px;
+  margin-bottom: 14px;
+}
+
+.map-flight-airline {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.map-plane-icon {
+  font-size: 27px;
+  background: #203d62;
+  padding: 8px;
+  border-radius: 9px;
+}
+
+.map-flight-airline strong,
+.map-route-summary strong {
+  display: block;
+  font: 600 16px 'Space Grotesk';
+}
+
+.map-flight-airline small,
+.map-route-summary small,
+.map-flight-status small {
+  display: block;
+  color: #93a7c1;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.map-route-summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.map-route-line {
+  display: flex;
+  align-items: center;
+  color: #73aaff;
+  gap: 5px;
+}
+
+.map-route-line span {
+  width: 28px;
+  height: 2px;
+  background: #587ca9;
+}
+
+.map-flight-status {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.aircraft-marker-wrap {
+  background: transparent;
+  border: 0;
+}
+
+.aircraft-emoji {
+  font-size: 29px;
+  filter: drop-shadow(0 3px 4px #14233c99);
+  animation: none;
+  text-align: center;
+}
+
+
+.map-container {
+  height: 430px;
+  border-radius: 11px;
+  overflow: hidden;
+  border: 1px solid #304763;
+}
+
+.flight-map {
+  width: 100%;
+  height: 100%;
+}
+
+.map-legend {
+  padding: 15px 2px 0;
+}
+
+.map-disclaimer {
+  line-height: 1.6;
+}
+
+@media(max-width:700px) {
+  .map-flight-summary {
+    align-items: flex-start;
+  }
+  .map-container {
+    height: 320px;
+  }
+}

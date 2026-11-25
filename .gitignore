@@ -1,0 +1,37 @@
+
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+# Frontend build output
+frontend/dist/
+
+# MCP configuration and secrets
+config/mcp.env
+
+# Previous source versions
+*.before*
+*.hotel-backup
+*.backup
+*.bak
+*.bak*
+*.bak_*
+
+# Temporary/cache files
+.cache/
+*.swp
+*.swo
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs
+*.log
+logs/
+
+# Additional backend backup naming patterns
+*.backup_*
+*.hotel-backup
+*.before_*
+*.before-*
